@@ -11,7 +11,7 @@ import java.util.Map;
 
 public class Task4 {
     private static final String URL = "https://httpbin.org/get";
-    public static void main(String[] args) throws IOException, InterruptedException {
+    public void start() throws IOException, InterruptedException {
         try (HttpClient client = HttpClient.newHttpClient())
         {
             HttpRequest request = HttpRequest.newBuilder()

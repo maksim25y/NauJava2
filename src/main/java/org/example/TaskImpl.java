@@ -45,14 +45,4 @@ public class TaskImpl implements Task{
             }
         }
     }
-    public static void main(String[] args) {
-        TaskImpl scanner = new TaskImpl("localhost", 1, 9000);
-        scanner.start();
-
-        try {
-            Thread.sleep(5000);
-        } catch (InterruptedException ignored) {
-        }
-        scanner.stop();
-    }
 }

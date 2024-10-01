@@ -4,12 +4,12 @@ import java.util.Scanner;
 
 public class Task1
 {
-    public static void main( String[] args ) {
-        Scanner scanner = new Scanner(System.in);
+    public void start(Scanner scanner){
+        System.out.print("Укажите размер массива: ");
         int n = scanner.nextInt();
-        int[]array = new int[n];
-        int min = -10_000;
-        int max = 10_000;
+        int[] array = new int[n];
+        int min = -10000;
+        int max = 10000;
         for(int i=0;i<n;i++){
             int randomNum = (int)(Math.random() * (max - min + 1)) + min;
             array[i]=randomNum;
